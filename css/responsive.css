@@ -1,0 +1,137 @@
+/* CSS Document */
+/* media queries  */
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding:1.5rem 2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top:100%; right: -100%;
+        background: #fff;
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+
+    .header .navbar.active{
+        right:0;
+    }
+
+    .header .navbar a{
+        color:var(--black);
+        display: block;
+        margin:1.5rem;
+        padding:.5rem;
+        font-size: 2rem;
+    }
+
+    .header .search-form{
+        width: 90%;
+        right: 2rem;
+    }
+
+    .home{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home .content h3{
+        font-size: 4.5rem;
+    }
+
+    .home .content p{
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+}
+
+/*-----SIGN UP-----*/
+@media (min-width: 992px) {
+  html,
+  body {
+    font-size: 18px;
+  }
+  body {
+    background: url("../images/bg.jpg") repeat top center fixed;
+  }
+  .pc {
+    display: block;
+  }
+  .mb {
+    display: none;
+  }
+  .container {
+    width: 1024px;
+    max-width: 1024px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .pc {
+    display: none;
+  }
+  .mb {
+    display: block;
+  }
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+/*-----LOG IN-----*/
+@media (max-width: 800px) {
+  .tblock-contact-inmap {
+    display: none;
+  }
+}
+/*-----LOG IN-----*/
+@media (max-width: 1200px) {
+  .login-box {
+    width: 90%;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (max-width: 900px) {
+  .login-box {
+    width: 83.33333333%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h2 {
+    padding: 0;
+  }
+}
+

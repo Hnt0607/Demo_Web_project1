@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ninja Food</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/signup.css">
+</head>
+<body>
+
+<header class="header">
+
+    <a href="index.html" class="logo">
+     <p><img src="../images/logo.png" alt=""> NinjaFood</p>
+    </a>
+	
+    <nav class="navbar">
+        <a href="index.html" class="active-menu">trang chủ</a>
+        <a href="about.html">tìm hiểu</a>
+        <a href="menu.html">thực đơn</a>
+        <a href="contact.html">liên hệ</a>
+        <a href="login.html">đăng nhập</a>
+    </nav>
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+		<div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </div>
+
+
+</header>
+<!-- header section ends -->
+<div id="home"></div>
+	
+ <section id="membership" class="membership">
+    <div class="form-signup">
+<div class="box_pro_detail box-checkout pt-3">
+    <div class="row_main">
+        <div class="row no-gutters">
+            <div class="col-12">
+                <div class="box-left ml-lg-3 mr-lg-3">
+
+                    <div class="nav_menu_header">
+                        <span>HÃY LÀ MỘT THÀNH VIÊN NINJAFOOD NGAY HÔM NAY</span>
+                    </div>
+                    <p class="text-center text_head_membership"><strong class="text-body">Tận Hưởng Là Thành Viên NinjaFood Với Các Ưu Đãi & Khuyến Mãi Đặc Biệt!</strong></p>
+
+        <form id="frmRegister" class="form-signin pt-4" method="post" accept-charset="utf-8">
+                    <input type="hidden" name="csrf_site_name" value="b71f6df949ae2b4010d48c635a6f54b1" />
+                    <div class="form-label-group">
+                        <input type="text" name="name" id="inputFullname" class="form-control" placeholder="Họ và tên">
+                        <label for="inputFullname"><span>Họ và tên<i class="text-danger">*</i></span></label>            
+                                                                            
+                    </div>
+                    <div class="form-label-group">
+                        <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email">
+                        <label for="inputEmail">
+                            <span>Email<i class="text-danger">*</i></span>
+                        </label> 
+                                                                    
+                    </div>
+                    <div class="form-label-group">
+                        <input type="password" name="password" id="inputPassword" class="password form-control" placeholder="Mật khẩu">         
+                                            
+                        <label for="inputPassword">
+                            <span>Mật khẩu<i class="text-danger">*</i></span>
+                        </label>
+                    </div>
+                    <div class="form-label-group">
+                        <input type="password" name="retype_pass" id="inputRePassword" class="password form-control" placeholder="Nhập lại Mật khẩu">                                          
+                            <label for="inputRePassword">
+                                <span>Nhập lại Mật khẩu<i class="text-danger">*</i>
+                                </span>
+                            </label>
+                    </div>
+                    <div class="form-label-group">
+                        <input type="text" name="phone" id="inputPhone" class="form-control"  placeholder="Điện thoại">
+                        <label for="inputPhone">
+                            <span>Điện thoại<i class="text-danger">*</i>
+                            </span>
+                        </label>
+                    </div>
+
+
+                    <div class="clearfix mb-4">
+                        <p><span><strong>Giới tính<i class="text-danger">*</i></strong></span></p>
+                        <div class="row checkbox custom-control-style">
+                            <div class="col-md-4">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="radio" name="gender" id="gender2" class="custom-control-input" value="2" />
+                                    <label class="custom-control-label" for="gender2">Nam</label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="radio" name="gender" id="gender1" class="custom-control-input" value="1" />
+                                    <label class="custom-control-label" for="gender1">Nữ</label>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+
+                <div class="clearfix">
+                    <p class="text-body">(<i class="text-danger">*</i>)Thông tin cần thiết</p>
+                    <p>Bạn sẽ nhận được phần thưởng đặc biệt nếu bạn đăng ký với thông tin đầy đủ. </p>
+                </div>
+                <div class="clearfix mt-4">
+                            
+                    <div class="custom-control-style">
+                        <div class="custom-control custom-checkbox">
+                            <input checked="true" type="checkbox" class="custom-control-input">
+                            <label class="custom-control-label text-body" for="checkboxPolicy">Tôi đã đọc và đồng ý với các <strong><u><a href="" onclick="loadOperationPolicyPopup();">Chính Sách Hoạt Động của NinjaFood.</a></u></strong>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix mt-4">
+                    <div class="custom-control-style">
+                        <div class="custom-control custom-checkbox">
+                                                    
+                            <input checked="true" type="checkbox" id="checkboxNewsletter" name="newsletter" class="custom-control-input" value="1">
+                                <label class="custom-control-label text-body" for="checkboxNewsletter"><strong><strong>Vâng, tôi đồng ý nhận</strong> bản tin từ NinjaFood qua Email.</strong>
+                                </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-label-group mt-4">                               
+                    <button type="submit" class="btn btn_nhut btn-danger btn-block"><span class="text-uppercase">Đăng ký</span></button>
+                </div>
+                
+                <div class="mt-1 mb-1">
+                            
+                    <div class="row no-gutters label-between m-auto">
+                                        
+                        <div class="col"></div>
+                            <div class="col-auto">
+                                <span>Hoặc đăng ký bằng tài khoản mạng xã hội</span>
+                             </div>
+                                        
+                    </div>
+                </div>
+                <div class="clearfix login_with_socical m-auto pt-1">
+                    <a class="btn btn-primary btn_nhut btn-block" href="javascript:void(0);" onclick="loginFB();"><img src="../images/icon/facebook.png" /><span class="text-white">Đăng ký với Facebook</span></a>
+                    <a class="btn btn-light btn_nhut btn-block" href="javascript:void(0);" onclick="login_Google();"><img src="../images/icon/gmail.png" /><span>Đăng ký với Google</span></a>
+                </div>
+                <div class="mt-4 mb-4 clearfix text-center">Chức Năng Này Không Cho Phép Ứng Dụng Đăng Hoặc Chia Sẻ Bất Kỳ  Thông Tin Nào Trên Tài Khoản Của Bạn Mà Chưa Có Sự Chấp Thuận Của Bạn.
+                </div>
+                <div class="mb-4 clearfix text-center">
+                            
+                    <p class="mb-2">
+                        <strong class="text-body">Bạn Đã Có Tài Khoản?</strong>
+                    </p>
+                    <a href="login.html" role="button" class="btn btn_nhut btn-block btn-outline-dark text-uppercase bg-white ninjafood_call_login">
+                    <span class="text-body">Đăng nhập</span>
+                    </a>
+                </div>
+        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+</section>
+
+<!-- footer section starts  -->
+
+<section class="footer">
+            <div class="row">
+            <div class="col-md-12">
+             <div class="col-md-3 col-sm-4">
+                <ul>
+                 <li class="parent">Cơ hội nghề
+                         nghiệp</li>                                                                                    <li><a href="">Thông tin tuyển dụng</a></li>
+								<li><a href="">Khu vực TP.HCM</a></li> 
+								<li><a href="">Khu vực Hà Nội</a></li> 
+				 </ul>
+			 </div>
+                <div class="showWeb col-md-3">
+                <ul>
+                <li class="parent">Chính sách</li>
+                <li><a href="">Các câu hỏi thường gặp</a></li>
+                <li><a href="">Điều khoản và Điều kiện</a></li>
+                <li><a href="">Chính sách về quyền riêng tư</a></li>
+                <ul class="showWap">
+                <li class="parent">Ngôn ngữ</li>
+                <li><a href="en/" style="width: 32px; margin-right:5px;"><img class="flags" src="../images/icon/united-states.png" alt=""></a>
+				<a href="vi/" style="width: 32px;"><img class="flags" src="../images/icon/vietnam.png" alt=""></a></li></ul></ul></div>
+                <div class="col-md-3 col-sm-3">
+				<ul>
+                    <li class="parent">Liên hệ với chúng tôi</li>
+					<li><a href="#">Liên hệ</a></li>
+                    <li><a href="#">Phản hồi chất lượng dịch vụ</a></li>
+                   <a href="#"><img class="social" src="../images/icon/facebook.png" alt=""></a>
+                   <a href="#"><img class="social" src="../images/icon/instagram.png" alt=""></a>
+                   <a href="#"><img class="social" src="../images/icon/youtube.png" alt=""></a>
+                   </ul>
+                   </div>
+                   </div>
+                   </div>
+                        
+    <div class="links">
+         <a href="index.html">trang chủ</a>
+        <a href="about.html">tìm hiểu</a>
+        <a href="menu.html">thực đơn</a>
+        <a href="contact.html">liên hệ</a>
+        <a href="login.html">đăng nhập</a>
+    </div>
+
+    <div class="credit">created by <span>Thống and Sơn</span></div>
+
+</section>
+
+<!-- footer section ends -->
+
+<!-- scroll top button  -->
+            <a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+
+<!-- custom js file link  -->
+<script src="../JSON/script.js"></script>	
+</body>
+</html>
